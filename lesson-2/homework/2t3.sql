@@ -15,9 +15,10 @@ CREATE TABLE photos
 INSERT INTO photos(id, photo)
 SELECT 1, *
 FROM openrowset(
-    BULK '/Users/zufarbekxalilov/Desktop/Codes/apple.png', SINGLE_BLOB
+    BULK 'C:\Users\kaZuha\Desktop\Codes\apple.jpg', SINGLE_BLOB
 ) AS img
 
+Select * from photos
 
 
 
